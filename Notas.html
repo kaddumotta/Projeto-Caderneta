@@ -68,8 +68,6 @@
                     <td>Nome Aluno</td>
                     <td>Nota 1</td>
                     <td>Nota 2</td>
-                    <td>Nota 3</td>
-                    <td>Nota 4</td>
                     <td>Média</td>
                     <td>Resultado</td>
                     
@@ -78,12 +76,9 @@
                 <tr>
                 <td>01</td>
                     <td>Kaddu</td>
-                    <td><input type="text" name="" id="nota_1_1"></td>
-                    <td><input type="text" name="" id="nota_2_1"></td>
-                    <td><input type="text" name="" id="nota_3_1"></td>
-                    <td><input type="text" name="" id="nota_4_1"></td>
-                    <td style="border: solid;" id="media_1"></td>
-                    <td style="border: solid;" id="Resultado_1"></td>
+                    <td><var nota_1><input type="text" name="" id="nota_1"></var></td>
+                    <td><var nota_2><input type="text" name="" id="nota_2"></var></td>
+                        
                     
                 <br>
                    
@@ -109,46 +104,11 @@
     </div>
     		
 </BODY>
+
 <script>
 
-function atualiza(){
-    calcula('nota_1_1', 'nota_2_1', 'nota_3_1', 'nota_4_1', media_1, Resultado_1); 
+
     
-}
-
-function calcula(n1, n2, fa, media_1, Resultado_1){
-    let nota_1 = document.getElementById(n1);
-    let nota_2 = document.getElementById(n2);
-    let nota_3 = document.getElementById(n3);
-    let nota_4 = document.getElementById(n4);
-
-    let media_1 = (parseFloat(nota_1.value) + parseFloat(nota_2.value))/2;
-    
-
-    if(isNaN(media) || isNaN(faltas)){
-        if(isNaN(media)){
-            media = 0;
-        }else if(isNaN(faltas)){
-            falta = 0
-        }
-    }
-
-    if(media < 5 || faltas > 5){
-        var result = "Reprovado"; 
-    }else{
-        var result = "Aprovado";
-    }
-
-    me.innerHTML = `${media}`; 
-    re.innerHTML = `${result}`; 
-}
-
-
-
-
-
-
-
 
 
 
